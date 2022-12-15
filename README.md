@@ -79,7 +79,7 @@ Get-TeamsChat -TenantId 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f' -TeamsChatType 'm
 
 ### To access Zulip you need to create your [API key](https://zulip.com/api/api-keys#get-your-api-key), it looks like this:
 ```
-19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
+gjA04ZYcqXKalvYMA8OeXSfzUOLrtbZv
 ```
 
 
