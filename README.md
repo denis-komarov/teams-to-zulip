@@ -56,7 +56,7 @@ D:\t2z\module\TeamsToZulip\TeamsToZulip.psm1
 b33cbe9f-8ebe-4f2a-912b-7e2a427f477f
 ```
 
-### Get a list of your chats from Microsoft Teams that you participated in by running a script like this:
+### Get a list of your chats from Microsoft Teams that you participated in by running a script like this in the PowerShell console:
 ```powershell
 $env:PSModulePath += ';' + 'd:\t2z\module'
 
@@ -94,7 +94,7 @@ gjA04ZYcqXKalvYMA8OeXSfzUOLrtbZv
 
 ### In Zulip, you need to create or define a target stream and select topic name to which you are going to transfer messages from Teams
 
-### Well, now you can start transferring messages from Teams to Zulip by running a script like this:
+### Well, now you can start transferring messages from Teams to Zulip by running a script like this in the PowerShell console:
 ```powershell
 $env:PSModulePath += ';' + 'd:\t2z\module'
 
