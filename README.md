@@ -92,7 +92,7 @@ gjA04ZYcqXKalvYMA8OeXSfzUOLrtbZv
 ```
 
 
-### In Zulip, you need to create or define a target [stream and select topic](https://zulip.com/help/streams-and-topics) name to which you are going to transfer messages from Teams
+### In Zulip, you need to create or define a target [stream and select topic](https://zulip.com/help/streams-and-topics) name to which you are going to transfer messages from Teams chat
 
 ### Well, now you can start transferring messages from Teams to Zulip by running a script like this in the PowerShell console:
 ```powershell
