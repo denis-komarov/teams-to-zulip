@@ -49,13 +49,11 @@ b33cbe9f-8ebe-4f2a-912b-7e2a427f477f
 
 ### Get a list of your chats from Microsoft Teams that you participated in by running a script like this:
 ```powershell
-$TenantId = 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f'
-
 $env:PSModulePath += ';' + 'd:\t2z\module'
 
 Import-Module -Name 'd:\t2z\module\TeamsToZulip'
 
-Get-TeamsChat -TenantId $TenantId -TeamsChatType 'meeting'  #  -TeamsChatTopic 'WS-' 
+Get-TeamsChat -TenantId 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f' -TeamsChatType 'meeting'  #  'meeting', 'group', 'oneOnOne'
 | ForEach-Object { 
   '-' * 100
   $_.Id
@@ -72,4 +70,39 @@ Get-TeamsChat -TenantId $TenantId -TeamsChatType 'meeting'  #  -TeamsChatTopic '
   }
 }
 
+```
+
+### Select from the list the chat that you want to transfer to Zulip. You need its id, it looks like this:
+```
+19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
+```
+
+### To access Zulip you need to create your [API key](https://zulip.com/api/api-keys#get-your-api-key), it looks like this:
+```
+19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
+```
+
+
+### In Zulip, you need to create or define a target topic to which you are going to transfer messages from Teams
+
+### Well, now you can start transferring messages from Teams to Zulip by running a script like this:
+```powershell
+$env:PSModulePath += ';' + 'd:\t2z\module'
+
+Import-Module -Name 'd:\t2z\module\TeamsToZulip'
+
+$ConvertArgs = @{
+  TeamsTenantId    = 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f'
+  TeamsChatId      = '19:b8577894a63548969c5c92bb9c80c5e1@thread.v2'
+  ZulipSite        = 'https://zulip.domain.com'
+  ZulipEmail       = 'fn.ln@domain.com'
+  ZulipKey         = 'gjA04ZYcqXKalvYMA8OeXSfzUOLrtbZv'
+  ZulipStreamName  = 'Denmark'
+  ZulipTopicName   = 'Castle'
+  DownloadDir      = "d:\t2z\download"
+  TrIDPathDir      = "d:\t2z\trid"
+  ShowProgress     = $true
+}  
+
+ConvertFrom-TeamsChatToZulipTopic @ConvertArgs
 ```
