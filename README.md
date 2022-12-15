@@ -1,6 +1,6 @@
 # TeamsToZulip
 
-**TeamsToZulip** is a [PowerShell](https://microsoft.com/powershell) [module](https://technet.microsoft.com/en-us/library/dd901839.aspx)
+**TeamsToZulip** is a [PowerShell](https://learn.microsoft.com/powershell/) [module](https://learn.microsoft.com/en-us/previous-versions/dd901839(v=vs.85))
 that that allows you to transfer messages from Microsoft Teams chats to the corresponding Zulip topics.
 
 **TeamsToZulip** has the following main functions:
