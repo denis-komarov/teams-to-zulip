@@ -22,7 +22,7 @@ d:\t2z\module\TeamsToZulip
 d:\t2z\trid
 ```
 
-### Install the required modules from PSGallery
+### Install the required modules from PSGallery by running a script like this in the PowerShell console:
 ```powershell
 $PSModuleDir = 'd:\t2z\module'
 $ModuleRepository = 'PSGallery'
