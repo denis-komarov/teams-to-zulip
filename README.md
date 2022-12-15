@@ -43,9 +43,10 @@ Download the file [triddefs.zip](https://mark0.net/download/triddefs.zip) and un
 d:\t2z\trid\triddefs.trd
 ```
 
-### Copy from this repository files (**TeamsToZulip.psd1** and **TeamsToZulip.psm1**) into the:
+### Copy the files from this repository into the directory, so that the files appear in it:
 ```
-d:\t2z\module\TeamsToZulip
+D:\t2z\module\TeamsToZulip\TeamsToZulip.psd1
+D:\t2z\module\TeamsToZulip\TeamsToZulip.psm1
 ```
 
 ## Usage
