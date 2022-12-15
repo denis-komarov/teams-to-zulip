@@ -32,9 +32,15 @@ Save-Module -Name 'Microsoft.Graph.Files' -Path $PSModuleDir -Repository $Module
 Save-Module -Name 'MarkdownPrince'        -Path $PSModuleDir -Repository $ModuleRepository -Force
 ```
 
-### Copy the program files (trid.exe and triddefs.trd) [TrID](http://mark0.net/soft-trid-e.html) into the:
+### Copy the program files of [TrID (C) 2003-16 By Marco Pontello](http://mark0.net/soft-trid-e.html) into the directory as follows:
+Download the file [trid_w32.zip](https://mark0.net/download/trid_w32.zip) and unzip its contents into the directory so that the files appear in it:
 ```
-d:\t2z\trid
+d:\t2z\trid\trid.exe
+d:\t2z\trid\readme.txt
+```
+Download the file [triddefs.zip](https://mark0.net/download/triddefs.zip) and unzip its contents into the directory so that the file appear in it:
+```
+d:\t2z\trid\triddefs.trd
 ```
 
 ### Copy from this repository files (**TeamsToZulip.psd1** and **TeamsToZulip.psm1**) into the:
