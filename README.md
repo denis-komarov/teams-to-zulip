@@ -11,6 +11,8 @@ that that allows you to transfer messages from Microsoft Teams chats to the corr
 
 ## Installation
 
+### Install the latest stable version of [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell) (from version 7.3 and above)
+
 ### Create the necessary directories, for example:
 ```
 d:\t2z
@@ -62,8 +64,8 @@ Get-TeamsChat -TenantId 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f' -TeamsChatType 'm
   $_.LastUpdatedDateTime.DateTime
   if ( $_.ChatType -in ( 'group', 'oneOnOne' ) )  #  ( 'meeting', 'group', 'oneOnOne' )
   { 
-    'Members:' 
     Get-TeamsChatMember -TenantId 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f' -TeamsChatId $_.Id 
+    'Members:' 
     | ForEach-Object { 
       $_.DisplayName 
     } 
