@@ -63,7 +63,7 @@ Get-TeamsChat -TenantId 'b33cbe9f-8ebe-4f2a-912b-7e2a427f477f' -TeamsChatType 'm
   if ( $_.ChatType -in ( 'group', 'oneOnOne' ) )  #  ( 'meeting', 'group', 'oneOnOne' )
   { 
     'Members:' 
-    Get-TeamsChatMember -TeamsAzureADTenantId $TenantId -TeamsChatId $_.Id 
+    Get-TeamsChatMember -TenantId $TenantId -TeamsChatId $_.Id 
     | ForEach-Object { 
       $_.DisplayName 
     } 
