@@ -32,7 +32,7 @@ Save-Module -Name 'Microsoft.Graph.Files' -Path $PSModuleDir -Repository $Module
 Save-Module -Name 'MarkdownPrince'        -Path $PSModuleDir -Repository $ModuleRepository -Force
 ```
 
-### Copy the program files of [TrID (C) 2003-16 By Marco Pontello](http://mark0.net/soft-trid-e.html) into the directory as follows:
+### Copy the program files of [TrID](http://mark0.net/soft-trid-e.html) into the directory as follows:
 Download the file [trid_w32.zip](https://mark0.net/download/trid_w32.zip) and unzip its contents into the directory so that the files appear in it:
 ```
 d:\t2z\trid\trid.exe
