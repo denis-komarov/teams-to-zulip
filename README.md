@@ -108,8 +108,8 @@ $ConvertArgs = @{
   ZulipKey         = 'gjA04ZYcqXKalvYMA8OeXSfzUOLrtbZv'
   ZulipStreamName  = 'Denmark'
   ZulipTopicName   = 'Castle'
-  DownloadDir      = "d:\t2z\download"
-  TrIDPathDir      = "d:\t2z\trid"
+  DownloadDir      = 'd:\t2z\download'
+  TrIDPathDir      = 'd:\t2z\trid'
   ShowProgress     = $true
 }  
 
@@ -121,4 +121,4 @@ ConvertFrom-TeamsChatToZulipTopic @ConvertArgs
 This module uses but does not include various external libraries and programs. Their authors have done a fantastic job.
 - [Powershell SDK for Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-powershell) - Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT license.
 - [MarkdownPrince](https://github.com/EvotecIT/MarkdownPrince) - Copyright (c) 2011 - 2021 Przemyslaw Klys @ Evotec. All rights reserved.
-- [TrID](http://mark0.net/soft-trid-e.html) -  Copyright (c) 2003-16 By Marco Pontello
+- [TrID](http://mark0.net/soft-trid-e.html) -  Copyright (c) 2003-16 Marco Pontello. All rights reserved. Licensed as freeware for non commercial, personal, research and educational use.
